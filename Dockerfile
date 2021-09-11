@@ -49,6 +49,7 @@ RUN apt-get -qqy update \
     && apt install unzip \
     && apt-get autoclean \
     && apt-get autoremove \
+    && apt install gdepi \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
 # COPY conf.d/* /etc/supervisor/conf.d/
